@@ -2,5 +2,9 @@ file:
   inputPath: files/csv
   outputPath: files/out
 
+#camel:
+#  mainRunController: true
+
 camel:
-  mainRunController: true
+  springboot:
+    mainRunController: true

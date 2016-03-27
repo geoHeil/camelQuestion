@@ -21,7 +21,6 @@ like:
 Second Question:
   - why does camel not delete the files as specified in the tear down method?
   - why is the null folder and .camel created and original csv deleted?
-  - what to do to keep the context running?
   
 ## Instructions
 
