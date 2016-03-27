@@ -1,0 +1,6 @@
+file:
+  inputPath: files/csv
+  outputPath: files/out
+
+camel:
+  main-run-controller: true
