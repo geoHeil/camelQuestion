@@ -22,8 +22,8 @@ import java.io.File;
 public class CSVRouteTest extends CamelTestSupport {
 
     private static String mockCSVFileName = "mockCSV.csv";
-    private static String mockCSVFileNameWithPath = "files/csv/" + mockCSVFileName;
-    private static String mockJSONFileNameWithPath = "files/out/" + mockCSVFileName + "_1.out.csv";
+    private static String mockCSVFileNameWithPath = "files/csv/mock/" + mockCSVFileName;
+    private static String mockJSONFileNameWithPath = "files/out/mock/" + mockCSVFileName + "_1.out.csv";
     private static String mockCSVBody = "Test11;Test12;Test13;Test14\nTest21;Test22;Test33;Test44";
 
     @Before
@@ -49,7 +49,7 @@ public class CSVRouteTest extends CamelTestSupport {
     @Test
     public void testParseFile() throws InterruptedException {
 
-        template.sendBodyAndHeader("file:files/csv", mockCSVBody, Exchange.FILE_NAME, mockCSVFileName);
+        template.sendBodyAndHeader("file:files/csv/mock", mockCSVBody, Exchange.FILE_NAME, mockCSVFileName);
 
         Thread.sleep(10000);
 
