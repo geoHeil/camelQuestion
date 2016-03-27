@@ -3,4 +3,4 @@ file:
   outputPath: files/out
 
 camel:
-  main-run-controller: true
+  mainRunController: true
